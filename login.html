@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FLEX MART - Login</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>FLEX MART</h1>
+    <div class="header-actions">
+      <button class="secondary-btn" onclick="window.location.href='login.html'">Login</button>
+      <button class="secondary-btn" onclick="window.location.href='index.html'">Home</button>
+      <button class="secondary-btn" onclick="window.location.href='cart.html'">Cart</button>
+      <button class="secondary-btn" onclick="window.location.href='checkout.html'">Checkout</button>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <section class="checkout-card auth-card">
+      <h2>Welcome to FLEX MART</h2>
+      <p class="subtext">Enter your email to continue shopping.</p>
+      <p class="subtext">Tip: press Enter after typing your email.</p>
+      <div id="message" class="message hidden"></div>
+      <input id="emailInput" class="text-input" type="email" placeholder="you@example.com" />
+      <button class="primary-btn" onclick="login()">Login</button>
+    </section>
+  </main>
+
+  <script src="store.js"></script>
+  <script src="login.js"></script>
+</body>
+</html>

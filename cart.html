@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FLEX MART - Cart</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>FLEX MART - Cart</h1>
+    <div class="header-actions">
+      <button class="secondary-btn" onclick="window.location.href='index.html'">Home</button>
+      <button class="secondary-btn" onclick="window.location.href='cart.html'">Cart</button>
+      <button class="secondary-btn" onclick="window.location.href='checkout.html'">Checkout</button>
+      <button class="secondary-btn" onclick="logout()">Logout</button>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <div id="message" class="message hidden"></div>
+    <div id="cart" class="cart-list"></div>
+
+    <section class="cart-footer">
+      <h2 id="total">Total: ₹0.00</h2>
+      <button class="primary-btn" onclick="checkout()">Checkout</button>
+    </section>
+  </main>
+
+  <script src="store.js"></script>
+  <script src="cart.js"></script>
+</body>
+</html>

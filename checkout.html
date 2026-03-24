@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FLEX MART - Checkout</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>FLEX MART - Checkout</h1>
+    <div class="header-actions">
+      <button class="secondary-btn" onclick="window.location.href='index.html'">Home</button>
+      <button class="secondary-btn" onclick="window.location.href='cart.html'">Cart</button>
+      <button class="secondary-btn" onclick="window.location.href='checkout.html'">Checkout</button>
+      <button class="secondary-btn" onclick="logout()">Logout</button>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <section class="checkout-card">
+      <h2>Confirm your order</h2>
+      <p class="subtext">Review and place your order securely in one click.</p>
+      <div id="message" class="message hidden"></div>
+      <button class="primary-btn" onclick="placeOrder()">Place Order</button>
+    </section>
+  </main>
+
+  <script src="store.js"></script>
+  <script src="checkout.js"></script>
+</body>
+</html>

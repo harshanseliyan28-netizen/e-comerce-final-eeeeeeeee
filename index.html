@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FLEX MART</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <h1>FLEX MART</h1>
+    <div class="header-actions">
+      <button class="secondary-btn" onclick="window.location.href='index.html'">Home</button>
+      <button class="secondary-btn" onclick="goToCart()">Cart</button>
+      <button class="secondary-btn" onclick="window.location.href='checkout.html'">Checkout</button>
+      <button class="secondary-btn" onclick="logout()">Logout</button>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <section class="hero">
+      <p class="badge">Premium Collection</p>
+      <h2>Curated luxury essentials for modern living.</h2>
+      <p class="subtext">Minimal design, elevated quality, and effortless checkout.</p>
+      <div id="typeNav" class="type-nav"></div>
+    </section>
+
+    <div id="message" class="message hidden"></div>
+    <div id="products" class="grid"></div>
+  </main>
+
+  <script src="store.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
